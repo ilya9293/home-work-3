@@ -11,9 +11,31 @@
    --color-background: #2f303a;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+ul,
+ol {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+}
+
 body {
    font-family: "Roboto", sans-serif;
    color: var(--color-main);
+}
+
+img {
+   display: block;
 }
 
 /* Components */
@@ -25,6 +47,9 @@ body {
    list-style: none;
 }
 .logo {
+   display: block;
+   padding: 24px 0;
+
    font-family: Raleway, sans-serif;
    letter-spacing: 0.03em;
    font-weight: 700;
@@ -44,7 +69,20 @@ body {
 /* End Components */
 
 /* Header */
+.page-header .container {
+   display: flex;
+   align-items: center;
+}
+
+.main-nav-list {
+   display: flex;
+   margin-left: 93px;
+}
+
 .link-main-nav {
+   display: block;
+   padding: 32px 0;
+
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
@@ -57,7 +95,31 @@ body {
    color: var(--color-accent);
 }
 
+.main-nav-list-item {
+   margin-left: 50px;
+}
+
+.main-nav-list-item:first-child {
+   margin-left: 0;
+}
+
+.head-contact {
+   display: flex;
+   margin-left: auto;
+}
+
+.list-head-contact {
+   margin-left: 50px;
+}
+
+.list-head-contact:first-child {
+   margin-left: 0;
+}
+
 .link-contact {
+   display: block;
+   padding: 32px 0;
+
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
@@ -93,7 +155,7 @@ body {
    font-weight: 700;
    font-size: 16px;
    line-height: 1.87;
-  letter-spacing: 0.06em;
+   letter-spacing: 0.06em;
    color: #ffffff;
    background: var(--color-accent);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -103,7 +165,7 @@ body {
 }
 .button:hover,
 .button:focus {
-   background-color: #188CE8;
+   background-color: #188ce8;
 }
 /* End Hero */
 
