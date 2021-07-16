@@ -69,6 +69,10 @@ img {
 /* End Components */
 
 /* Header */
+
+.page-header {
+   border-bottom: 1px solid #ececec;
+}
 .page-header .container {
    display: flex;
    align-items: center;
@@ -142,6 +146,8 @@ img {
    background-color: var(--color-background);
 }
 .main-title {
+   padding-top: 200px;
+
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -152,6 +158,13 @@ img {
    color: #ffffff;
 }
 .button {
+   display: block;
+   margin-top: 30px;
+   padding: 10px 32px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+
    font-weight: 700;
    font-size: 16px;
    line-height: 1.87;
@@ -170,6 +183,24 @@ img {
 /* End Hero */
 
 /* Особенности сайта */
+.title-second {
+   visibility: hidden;
+}
+
+.feature-list {
+   display: flex;
+   padding-top: 67px;
+   padding-bottom: 94px;
+}
+
+.feature-item + .feature-item {
+   margin-left: 30px;
+}
+
+.feature-item {
+   width: 270px;
+}
+
 .feature-title {
    font-size: 14px;
    line-height: 1.14;
@@ -178,6 +209,8 @@ img {
    color: var(--color-title);
 }
 .text-feature {
+   margin-top: 10px;
+
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
@@ -185,7 +218,21 @@ img {
 /* End Особенностей сайта */
 
 /* Чем мы занимаемся */
+.list-description {
+   display: flex;
+   padding-bottom: 94px;
+}
+
+.item-description {
+   margin-left: 30px;
+}
+.item-description:first-child {
+   margin-left: 0;
+}
+
 .title-description {
+   margin-bottom: 50px;
+
    font-size: 36px;
    line-height: 1.17;
    letter-spacing: 0.03em;
@@ -195,14 +242,39 @@ img {
 /* End чем мы занимаемся */
 
 /* Our team */
+.section.team {
+   background: #f5f4fa;
+}
+
 .title-team {
+   padding-top: 94px;
+
    font-size: 36px;
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-align: center;
    color: var(--color-title);
 }
+
+.list-team {
+   display: flex;
+   padding-bottom: 94px;
+   margin-top: 50px;
+}
+
+.item-team + .item-team {
+   margin-left: 30px;
+}
+
+.item-team {
+   background: #ffffff;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+}
+
 .title-name-team {
+   margin-top: 30px;
+
    font-weight: 500;
    font-size: 16px;
    line-height: 1.19;
@@ -211,6 +283,9 @@ img {
    color: var(--color-title);
 }
 .profession {
+   margin-top: 10px;
+   padding-bottom: 30px;
+
    font-size: 16px;
    line-height: 1.19;
    letter-spacing: 0.03em;
@@ -219,9 +294,19 @@ img {
 /* End our team */
 
 /* Footer */
-.container.background {
+footer {
    background-color: var(--color-background);
 }
+
+footer .logo {
+   padding-top: 60px;
+   padding-bottom: 0;
+}
+
+.list-contact {
+   margin-top: 20px;
+}
+
 .link-adress {
    font-size: 14px;
    line-height: 1.71;
