@@ -1,0 +1,212 @@
+/* голубой #2196F3 */
+/* цвет основоного текста, абзацев #757575 */
+/* белые слова #FFFFFF */
+/* заголовки и навигация #212121 */
+/* Raleway – 700, а для Roboto – 400, 500, 700 и 900 */
+
+:root {
+   --color-title: #212121;
+   --color-main: #757575;
+   --color-accent: #2196f3;
+   --color-background: #2f303a;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+   color: var(--color-main);
+}
+
+/* Components */
+.link {
+   text-decoration: none;
+   color: inherit;
+}
+.item {
+   list-style: none;
+}
+.logo {
+   font-family: Raleway, sans-serif;
+   letter-spacing: 0.03em;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   color: #000000;
+}
+.logo-accent {
+   color: var(--color-accent);
+}
+
+.container {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+/* End Components */
+
+/* Header */
+.link-main-nav {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   color: var(--color-title);
+}
+
+.link-main-nav:hover,
+.link-main-nav:focus {
+   color: var(--color-accent);
+}
+
+.link-contact {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   color: var(--color-main);
+}
+
+.link-main-nav-accent {
+   color: var(--color-accent);
+}
+.link-contact:hover,
+.link-contact:focus {
+   color: var(--color-accent);
+}
+
+/* End header */
+
+/* Hero */
+.section.background {
+   background-color: var(--color-background);
+}
+.main-title {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+
+   color: #ffffff;
+}
+.button {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+  letter-spacing: 0.06em;
+   color: #ffffff;
+   background: var(--color-accent);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+}
+.button:hover,
+.button:focus {
+   background-color: #188CE8;
+}
+/* End Hero */
+
+/* Особенности сайта */
+.feature-title {
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--color-title);
+}
+.text-feature {
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+}
+/* End Особенностей сайта */
+
+/* Чем мы занимаемся */
+.title-description {
+   font-size: 36px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-align: center;
+   color: var(--color-title);
+}
+/* End чем мы занимаемся */
+
+/* Our team */
+.title-team {
+   font-size: 36px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-align: center;
+   color: var(--color-title);
+}
+.title-name-team {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   text-align: center;
+   color: var(--color-title);
+}
+.profession {
+   font-size: 16px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   text-align: center;
+}
+/* End our team */
+
+/* Footer */
+.container.background {
+   background-color: var(--color-background);
+}
+.link-adress {
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   font-style: normal;
+   color: #ffffff;
+}
+.link-tel-email {
+   font-size: 14px;
+   font-style: normal;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+}
+.logo-footer {
+   color: #ffffff;
+}
+
+/* Portfolio */
+.button-portfolio {
+   background: #f5f4fa;
+   border-radius: 4px;
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   letter-spacing: 0.03em;
+   text-align: center;
+   color: var(--color-title);
+   border: none;
+
+   cursor: pointer;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+   color: #ffffff;
+   background: var(--color-accent);
+}
+.title-cards {
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+   color: var(--color-title);
+}
+.description-cards {
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.03em;
+   color: var(--color-main);
+}
