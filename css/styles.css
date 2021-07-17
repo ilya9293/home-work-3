@@ -73,7 +73,7 @@ img {
    width: 1px;
    height: 1px;
    margin: -1px;
- }
+}
 /* End Components */
 
 /* Header */
@@ -153,9 +153,10 @@ img {
 /* Hero */
 .section.background {
    background-color: var(--color-background);
+   padding: 200px 0;
 }
 .main-title {
-   padding-top: 200px;
+   margin-bottom: 30px;
 
    font-weight: 900;
    font-size: 44px;
@@ -168,9 +169,7 @@ img {
 }
 .button {
    display: block;
-   margin-top: 30px;
    padding: 10px 32px;
-   text-align: center;
    margin-left: auto;
    margin-right: auto;
 
@@ -190,9 +189,6 @@ img {
    background-color: #188ce8;
 }
 
-.block-button {
-   padding-bottom: 200px;
-}
 /* End Hero */
 
 /* Особенности сайта */
