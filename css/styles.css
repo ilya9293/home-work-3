@@ -67,10 +67,14 @@ img {
    padding: 0 15px;
 }
 
-.padding-container {
+.section {
+   padding-bottom: 94px;
+   padding-top: 94px;
+}
+/* .padding-container {
    padding-top: 94px;
    padding-bottom: 94px;
-}
+} */
 
 .visually-hidden {
    position: absolute;
@@ -92,9 +96,12 @@ img {
    align-items: center;
 }
 
+.main-nav {
+   margin-left: 93px;
+}
+
 .main-nav-list {
    display: flex;
-   margin-left: 93px;
 }
 
 .link-main-nav {
@@ -126,12 +133,16 @@ img {
    margin-left: auto;
 }
 
-.list-head-contact {
+/* .list-head-contact {
    margin-left: 50px;
 }
 
 .list-head-contact:first-child {
    margin-left: 0;
+} */
+
+.list-head-contact:not(:first-child) {
+   margin-left: 50px;
 }
 
 .link-contact {
@@ -197,6 +208,10 @@ img {
 /* End Hero */
 
 /* Особенности сайта */
+.section-features {
+   padding-bottom: 47px;
+}
+
 .feature-list {
    display: flex;
    flex-wrap: wrap;
@@ -227,16 +242,21 @@ img {
 /* End Особенностей сайта */
 
 /* Чем мы занимаемся */
+.section-benefits {
+   padding-top: 47px;
+}
+
 .list-description {
    display: flex;
-   padding-bottom: 94px;
+   flex-wrap: wrap;
+   margin-top: -30px;
+   margin-left: -30px;
 }
 
 .item-description {
+   margin-top: 30px;
    margin-left: 30px;
-}
-.item-description:first-child {
-   margin-left: 0;
+   flex-basis: calc((100% - 90px) / 3);
 }
 
 .title-description {
@@ -353,6 +373,7 @@ footer .logo {
 .list-button {
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    margin-bottom: 50px;
 }
 
@@ -398,8 +419,6 @@ footer .logo {
    margin-top: 30px;
    margin-left: 30px;
    flex-basis: calc((100% - 90px) / 3);
-
-   border-bottom: 1px solid #eeeeee;
 }
 
 /* .item-cards:not(:nth-last-child(-n + 3)) {
@@ -412,6 +431,7 @@ footer .logo {
 
 .block-portfolio-cards {
    padding: 20px 24px;
+   border: 1px solid #eeeeee;
 }
 
 .title-cards {
